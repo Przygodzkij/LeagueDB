@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [tSQLt].[Private_GetCursorForRunAll]
+AS
+BEGIN
+  INSERT INTO #TestClassesForRunCursor
+   SELECT Name
+     FROM tSQLt.TestClasses;
+END;
+GO

@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [tSQLt].[PrepareServer]
+AS
+BEGIN
+  EXEC tSQLt.Private_EnableCLR;
+  EXEC tSQLt.InstallAssemblyKey;
+END;
+GO
