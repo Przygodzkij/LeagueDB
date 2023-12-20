@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[tab1]
 (
-[col0] [int] NULL,
+[col0] [int] NOT NULL,
 [col1] [int] NULL,
 [col2] [int] NULL,
 [col3] [int] NULL,
@@ -11,4 +11,6 @@ CREATE TABLE [dbo].[tab1]
 [col8] [int] NULL,
 [col9] [int] NULL
 ) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[tab1] ADD CONSTRAINT [tab1_pk] PRIMARY KEY CLUSTERED ([col0]) ON [PRIMARY]
 GO

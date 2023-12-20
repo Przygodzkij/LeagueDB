@@ -12,3 +12,5 @@ CREATE TABLE [dbo].[tab13]
 [col9] [int] NULL
 ) ON [PRIMARY]
 GO
+ALTER TABLE [dbo].[tab13] ADD CONSTRAINT [tab13_tab1_col0_fk] FOREIGN KEY ([col0]) REFERENCES [dbo].[tab1] ([col0])
+GO
